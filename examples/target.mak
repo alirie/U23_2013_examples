@@ -11,7 +11,8 @@ SUBDIRS :=  01_leds \
 			11_guitar \
 			12_adc \
 			13_joystick \
-			14_onewire
+			14_onewire \
+			15_display
 
 SELF_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
 include $(abspath $(addprefix $(SELF_DIR),$(addsuffix /target.mak,$(SUBDIRS))))
